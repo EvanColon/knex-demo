@@ -6,10 +6,8 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
-    connection: {
-      filename: './dev.sqlite3'
-    }
+    client: 'pg',
+    connection: 'postgres://postgres:docker@127.0.0.1/pet_store'
   },
 
   staging: {
