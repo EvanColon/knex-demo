@@ -4,12 +4,12 @@
  */
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
-  
+
   await knex('pet').del()
   await knex('pet').insert([
     {id: 1, name: 'Figaro', pet_type_id: 2},
     {id: 2, name: 'Fat Sam', pet_type_id: 3},
-    {id: 3, name: 'Ash', pet_type_id: 4},
-    {id: 4, name: 'Ash', pet_type_id: 1}
+    {id: 3, name: 'Ash', pet_type_id: 3},
+    {id: 4, name: 'Ashy', pet_type_id: 4},
   ]);
 };

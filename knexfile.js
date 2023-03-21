@@ -6,8 +6,14 @@
 module.exports = {
 
   development: {
-    client: 'pg',
-    connection: 'postgres://postgres:docker@127.0.0.1/pet_store'
+    client: 'postgresql',
+    connection: {
+      host: '127.0.0.1',
+      password: 'docker',
+      user: 'postgres',
+      port: 5432,
+      database: 'pet_store'
+    }
   },
 
   staging: {
